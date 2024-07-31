@@ -84,7 +84,7 @@
         <div>
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" 
-                   pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" 
+                   pattern="^(?=.[A-Za-z])(?=.\d)[A-Za-z\d]{8,}$" 
                    title="Password must be at least 8 characters long, contain at least one uppercase letter, one lowercase letter, one number, and one special character." 
                    required>
             <span id="passwordError" class="error"></span>
