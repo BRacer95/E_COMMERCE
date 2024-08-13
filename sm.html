@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMART PHONE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333333;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            background-color: #bdc4cb;
+            padding: 1px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffcc00; 
+        }
+        .icons {
+            display: flex;
+            gap: 15px;
+        }
+        .icon {
+            font-size: 20px;
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .icon:hover {
+            color: #ffcc00;
+        }
+        .product-container {
+            display: flex; 
+            justify-content: flex-start; 
+            margin: 20px; 
+            overflow-x: auto; 
+        }
+        .product {
+            width: 300px; 
+            margin: 10px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s; 
+        }
+        .product:hover {
+            transform: translateY(-5px); 
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); 
+        }
+        .product img {
+            width: 80%;
+            margin-bottom: 10px;
+            border-radius: 5px; 
+        }
+        .som {
+            color: white;
+            background-color: black;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s; 
+            font-weight: bold;
+        }
+        .som:hover {
+            background-color: #ffcc00; 
+            color: black; 
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s; 
+        }
+        button:hover {
+            background-color: red; 
+        }
+        footer {
+            background-color: #333333;
+            color: #ffffff;
+            text-align: center;
+            padding: 1px 0;
+            position: relative; 
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Absolute Ecommerce</h1>
+</header>
+
+<nav>
+    <a href="homE.html">Home</a>
+    <a href="sw.html">Products</a>
+    <a href="ec_about.html">About</a>
+    <a href="ec_about.html">Contact</a>
+    <div class="icons">
+        <a href="#" class="icon">&#128100;</a> <!-- Account icon -->
+        <a href="#" class="icon">&#128722;</a> <!-- Cart icon -->
+    </div>
+</nav>
+
+<div class="product-container">
+    <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuVosPj0JRydethlwv9qEnuHZi8MYdkFn5PjiK0tVsChQ54MtN1BUJnwZL&s=10p*" alt="Item 1">
+        <h3>SAMSUNG S23 ULTRA</h3>
+        <p>1. 108 MP with 100X periscope zoom</p>
+        <p>2. Snapdragon 8 Gen 3 with AU</p>
+        <p>3. Titanium edged Victus 2 protected</p> 
+        <button class="som">PRICE ₹1,29,999</button>
+        <br><br> 
+        <button>ADD TO CART</button>
+    </div>
+    <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPpe2YwcYuIgl9Ak2NX3pcy0phBzNtVoQ-TWRqugC-ZCmldwm2y6OP3jE&s=10" alt="Item 2">
+        <h3>ROG PHONE 8</h3>
+        <p>1. Qualcomm Snapdragon 8 Gen 3</p>
+        <p>2. 360 SoC cooling system</p>
+        <p>3. 165Hz AMOLED display</p>
+        <button class="som">PRICE ₹93,999</button>
+        <br><br> 
+        <button>ADD TO CART</button>
+    </div>
+    <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtRJT_rGYybykFee3qJVp3uqobOqEKl2wAGw&usqp=CAU" alt="Item 3">
+        <h3>HUAWEI P40 PRO</h3>
+        <p>Designed for dramatic photography</p>
+        <p>Kirin 1910 processor</p>
+        <p>HarmonyOS 4.2</p>
+        <button class="som">PRICE ₹78,999</button>
+        <br><br> 
+        <button>ADD TO CART</button>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 TechStore. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

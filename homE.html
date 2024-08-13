@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333333;
+            color: #ffffff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            background-color: #bdc4cb;
+            padding: 1px;
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 5px; 
+            font-size: 14px; 
+        }
+        .icons {
+            display: flex;
+            gap: 15px; 
+        }
+        .icon {
+            font-size: 20px; 
+            color: #ffffff;
+        }
+        .products-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .product {
+            width: 22%;
+            margin: 10px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .product img {
+            width: 80%;
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #333333;
+            color: #ffffff;
+            text-align: center;
+            padding: 1px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        button a {
+            color: red;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Absolute Ecommerce</h1>
+</header>
+
+<nav>
+    <a href="home.html">Home</a>
+    <a href="LAP.html">Products</a>
+    <a href="ec_about.html">About</a>
+    <a href="ec_about.html">Contact</a>
+    <div class="icons">
+        <a href="#" class="icon">&#128100;</a> 
+        <a href="#" class="icon">&#128722;</a> 
+    </div>
+</nav>
+
+<div class="products-container">
+    <div class="product">
+        <img src="https://www.notebookcheck.net/fileadmin/_processed_/webp/Notebooks/News/_nc3/Zephyrus_Duo93-q82-w480-h.webp" alt="Laptop">
+        <h2>LAPTOP</h2>
+        <p></p>
+        <button><a href="LAP.html">VIEW</a></button>
+    </div>
+    <div class="product">
+        <img src="https://i.gadgets360cdn.com/large/galaxy_f55_samsung_x_1715161989540.jpg?downsize=950:*" alt="Smartphone">
+        <h2>SMARTPHONE</h2>
+        <p></p>
+        <button><a href="sm.html">VIEW</a></button>
+    </div>
+    <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSUEMMthxS2dU0Tt3ITC5XR1CZg8zxyWL-M9UHbDuWvHSRQhhIQRvW3Bwa&s=10" alt="AUDIO">
+        <h2>AUDIO</h2>
+        <p></p>
+        <button><a href="audio .html">VIEW</a></button>
+    </div>
+    <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_1ixKV8XNbjL4jxfdO20j2usMifJ0lnzPdA&usqp=CAU" alt="Smart Watch">
+        <h2>SMART WATCH</h2>
+        <p></p>
+        <button><a href="sw.html">VIEW</a></button>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 TechStore. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

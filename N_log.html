@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000000;
+        }
+        .login-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .login-container h2 {
+            margin-bottom: 20px;
+         
+        }h1{
+        text-align: center;
+        }
+        .login-container input[type="email"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #000000;
+            border-radius: 5px;
+        }
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #02ff31;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .login-container button:hover {
+            background-color: red;
+        }
+        .error {
+            color: red;
+            margin-top: 10px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+        <div class="y">
+        <div class="lo">
+            <img src="lp.jpg" > 
+        </div>
+    </div>
+    <div>
+
+    <div class="login-container">
+        <h1> <u>  Absolute   Ecommerce</u>  </h1>
+        <h2>Login</h2>
+        <input type="email" id="email" placeholder="Enter your email">
+        <input type="password" id="password" placeholder="Enter your password">
+        <button onclick="validateLogin()">Login</button>
+        <div class="error" id="email-error">Please enter a valid email address.</div>
+        <div class="error" id="password-error"> least one lowercase letter, one uppercase letter, one digit, and one special character.</div>
+    </div>
+
+    <script>
+        function validateLogin() {
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Basic email pattern
+            const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+
+            const inputEmail = document.getElementById("email").value;
+            const inputPassword = document.getElementById("password").value;
+            const emailError = document.getElementById("email-error");
+            const passwordError = document.getElementById("password-error");
+
+            let isValid = true;
+
+            if (!emailPattern.test(inputEmail)) {
+                emailError.style.display = "block";
+                isValid = false;
+            } else {
+                emailError.style.display = "none";
+            }
+
+            if (!passwordPattern.test(inputPassword)) {
+                passwordError.style.display = "block";
+                isValid = false;
+            } else {
+                passwordError.style.display = "none";
+            }
+
+            if (isValid) {
+
+                
+            
+                window.location.href = "homE.html"; // Redirects to the home page on successful login
+            }
+        }
+    </script>
+
+</body>
+</html>
